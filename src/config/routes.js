@@ -1,0 +1,17 @@
+export const ROUTES = {
+    HOME: "/",
+    NOT_FOUND: "/notfound",
+    ABOUT_US: "/aboutUs",
+    REVIEWS: "/reviews",
+    FAQ: "/faq",
+    MEMBERSHIP: "/membership",
+    PRIVACY_POLICY: "/privacyPolicy",
+    CONTACTS: "/contacts",
+    MASSAGES: "/massages",
+    BOOK: "/book",
+    MASSAGE: "/massage/:id",
+    LOGIN: "/login",
+    REGISTER: "/register",
+    MY_BOOKINGS: "/myBookings",
+    ALL_BOOKINGS: "/allBookings",
+}
