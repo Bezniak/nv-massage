@@ -115,7 +115,7 @@ const Contacts = () => {
                                 <li>
                                     <a
                                         className='hover:text-[var(--active)] transition'
-                                        href="tg://resolve?domain=Natalia_NV_massage"
+                                        href="https://t.me/NV_massage_baranovichi"
                                         target="_blank"
                                         rel="noreferrer"
                                     >
@@ -125,7 +125,7 @@ const Contacts = () => {
                                 <li>
                                     <a
                                         className='hover:text-[var(--active)] transition'
-                                        href="viber://chat?number=+375336424878"
+                                        href="https://invite.viber.com/?number=%2B375336424878"
                                         target="_blank"
                                         rel="noreferrer"
                                     >
@@ -150,13 +150,13 @@ const Contacts = () => {
                                 <li>{t("contacts.sunday")}</li>
                             </ul>
                             <ul>
-                                <li>09:00 - 18:00</li>
-                                <li>09:00 - 18:00</li>
-                                <li>09:00 - 18:00</li>
-                                <li>09:00 - 18:00</li>
-                                <li>09:00 - 18:00</li>
-                                <li>09:00 - 18:00</li>
-                                <li>09:00 - 18:00</li>
+                                <li>09:00 - 17:30</li>
+                                <li>09:00 - 17:30</li>
+                                <li>09:00 - 17:30</li>
+                                <li>09:00 - 17:30</li>
+                                <li>09:00 - 17:30</li>
+                                <li>09:00 - 17:30</li>
+                                <li>09:00 - 17:30</li>
                             </ul>
                         </div>
                     </div>

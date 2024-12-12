@@ -104,24 +104,27 @@ const Footer = () => {
                         </li>
                         <li>
                             <a
-                                className='hover:text-[var(--white)] transition'
-                                href="tg://resolve?domain=Natalia_NV_massage"
+                                className="hover:text-[var(--white)] transition"
+                                href="https://t.me/NV_massage_baranovichi"
                                 target="_blank"
                                 rel="noreferrer"
                             >
                                 <FaTelegram/>
                             </a>
                         </li>
+
                         <li>
                             <a
-                                className='hover:text-[var(--white)] transition'
-                                href="viber://chat?number=+375336424878"
+                                className="hover:text-[var(--white)] transition"
+                                href="https://invite.viber.com/?number=%2B375336424878"
                                 target="_blank"
                                 rel="noreferrer"
                             >
                                 <FaViber/>
                             </a>
                         </li>
+
+
                     </ul>
                 </div>
 

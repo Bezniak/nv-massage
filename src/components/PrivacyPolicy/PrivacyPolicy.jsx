@@ -24,7 +24,7 @@ const PrivacyPolicy = () => {
                         </h1>
                     </div>
                 </div>
-                <div className='container mx-auto mt-10 mb-10'>
+                <div className='md:container xs:p-4 mt-10 md:mb-16 mx-auto w-full'>
                     <h2 className='font-semibold mb-3'>
                         {t("privacyPolicy.introduction")}
                     </h2>

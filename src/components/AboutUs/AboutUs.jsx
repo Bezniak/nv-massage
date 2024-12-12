@@ -127,9 +127,9 @@ const AboutUs = () => {
                                     <FaTelegram
                                         className='mr-3 text-lg text-[var(--active-dark)] group-hover:text-[var(--active)] transition'/>
                                     <a
-                                        href={`tg://resolve?domain=Natalia_NV_massage`}
-                                        rel="noreferrer"
+                                        href="https://t.me/NV_massage_baranovichi"
                                         target="_blank"
+                                        rel="noreferrer"
                                         className='group-hover:text-[var(--active)] transition'
                                     >
                                         Telegram
@@ -138,9 +138,9 @@ const AboutUs = () => {
                                 <li className='group flex items-center justify-center rounded'>
                                     <FaViber
                                         className='mr-3 text-lg text-[var(--active-dark)] group-hover:text-[var(--active)] transition'/>
-                                    <a href={`viber://chat?number=+375336424878`}
-                                       rel="noreferrer"
+                                    <a href="https://invite.viber.com/?number=%2B375336424878"
                                        target="_blank"
+                                       rel="noreferrer"
                                        className='group-hover:text-[var(--active)] transition'
                                     >
                                         Viber
