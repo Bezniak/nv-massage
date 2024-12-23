@@ -77,7 +77,7 @@ const Navbar = () => {
         >
             <div className="max-w-screen-xl mx-auto p-4">
                 <div className="flex items-center justify-between mb-10">
-                    <NavLink to={ROUTES.HOME} className="flex items-center space-x-3 rtl:space-x-reverse">
+                    <NavLink to={ROUTES.HOME} className="flex items-center space-x-3 rtl:space-x-reverse">`
                         <img src="/logoWhite.svg" className="md:h-20 xs:h-10" alt="nv logo"/>
                     </NavLink>
                     <div className='hidden md:block'>
