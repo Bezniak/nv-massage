@@ -70,6 +70,12 @@ const Navbar = () => {
         logout();
     };
 
+    const handleLanguageChange = (language) => {
+        changeLanguage(language);
+        window.location.reload();
+        setIsLanguageDropdownOpen(false);
+    };
+
 
     return (
         <nav
@@ -207,40 +213,28 @@ const Navbar = () => {
                                      className="absolute right-0 z-10 mt-2 bg-white rounded-lg shadow-lg w-40">
                                     <ul className="text-sm text-gray-700">
                                         <li
-                                            onClick={() => {
-                                                changeLanguage('ru');
-                                                setIsLanguageDropdownOpen(false);
-                                            }}
+                                            onClick={() => handleLanguageChange('ru')}
                                             className="flex items-center px-4 py-2 cursor-pointer hover:bg-gray-100"
                                         >
                                             <img src={ruFlag} alt="Русский" className="w-6 h-6 mr-2"/>
                                             Русский
                                         </li>
                                         <li
-                                            onClick={() => {
-                                                changeLanguage('en');
-                                                setIsLanguageDropdownOpen(false);
-                                            }}
+                                            onClick={() => handleLanguageChange('en')}
                                             className="flex items-center px-4 py-2 cursor-pointer hover:bg-gray-100"
                                         >
                                             <img src={enFlag} alt="English" className="w-6 h-6 mr-2"/>
                                             English
                                         </li>
                                         <li
-                                            onClick={() => {
-                                                changeLanguage('zh');
-                                                setIsLanguageDropdownOpen(false);
-                                            }}
+                                            onClick={() => handleLanguageChange('zh')}
                                             className="flex items-center px-4 py-2 cursor-pointer hover:bg-gray-100"
                                         >
                                             <img src={cnFlag} alt="中文" className="w-6 h-6 mr-2"/>
                                             中文
                                         </li>
                                         <li
-                                            onClick={() => {
-                                                changeLanguage('tk');
-                                                setIsLanguageDropdownOpen(false);
-                                            }}
+                                            onClick={() => handleLanguageChange('tk')}
                                             className="flex items-center px-4 py-2 cursor-pointer hover:bg-gray-100"
                                         >
                                             <img src={tmFlag} alt="Türkmen" className="w-6 h-6 mr-2"/>

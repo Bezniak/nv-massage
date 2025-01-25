@@ -1,14 +1,14 @@
 import React from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
+import {Swiper, SwiperSlide} from 'swiper/react';
 import './PhotoCollection.css';
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
-import { EffectCoverflow, Navigation, Pagination } from "swiper/modules";
-import { Preloader } from "../../common/Preloader/Preloader.jsx";
-import { useTranslation } from "react-i18next";
+import {EffectCoverflow, Navigation, Pagination} from "swiper/modules";
+import {Preloader} from "../../common/Preloader/Preloader.jsx";
+import {useTranslation} from "react-i18next";
 
-export default function PhotoCollection({ data = [], loading, error, title, extraImages = [] }) {
-    const { t } = useTranslation();
+export default function PhotoCollection({data = [], loading, error, title, extraImages = []}) {
+    const {t} = useTranslation();
 
     // // Локальный массив изображений по умолчанию
     // const defaultImages = Array.from({length: 11}, (_, i) => ({
@@ -19,17 +19,25 @@ export default function PhotoCollection({ data = [], loading, error, title, extr
 
     // Локальный массив изображений по умолчанию
     const defaultImages = [
-        { id: 'local-1', url: '/photo_1.jpg', name: 'Photo 1' },
-        { id: 'local-2', url: '/photo_2.jpg', name: 'Photo 2' },
-        { id: 'local-3', url: '/photo_3.jpg', name: 'Photo 3' },
-        { id: 'local-4', url: '/photo_4.jpg', name: 'Photo 4' },
-        { id: 'local-5', url: '/photo_5.jpg', name: 'Photo 5' },
-        { id: 'local-6', url: '/photo_6.jpg', name: 'Photo 6' },
-        { id: 'local-7', url: '/photo_7.jpg', name: 'Photo 7' },
-        { id: 'local-8', url: '/photo_8.jpg', name: 'Photo 8' },
-        { id: 'local-9', url: '/photo_9.jpg', name: 'Photo 9' },
-        { id: 'local-10', url: '/photo_10.jpg', name: 'Photo 10' },
-        { id: 'local-11', url: '/photo_11.jpg', name: 'Photo 11' },
+        {id: 'local-1', url: '/photo_1.jpg', name: 'Photo 1'},
+        {id: 'local-2', url: '/photo_2.jpg', name: 'Photo 2'},
+        {id: 'local-3', url: '/photo_3.jpg', name: 'Photo 3'},
+        {id: 'local-4', url: '/photo_4.jpg', name: 'Photo 4'},
+        {id: 'local-5', url: '/photo_5.jpg', name: 'Photo 5'},
+        {id: 'local-6', url: '/photo_6.jpg', name: 'Photo 6'},
+        {id: 'local-7', url: '/photo_7.jpg', name: 'Photo 7'},
+        {id: 'local-8', url: '/photo_8.jpg', name: 'Photo 8'},
+        {id: 'local-9', url: '/photo_9.jpg', name: 'Photo 9'},
+        {id: 'local-10', url: '/photo_10.jpg', name: 'Photo 10'},
+        {id: 'local-11', url: '/photo_11.jpg', name: 'Photo 11'},
+        {id: 'local-12', url: '/photo_12.jpg', name: 'Photo 12'},
+        {id: 'local-13', url: '/photo_13.jpg', name: 'Photo 13'},
+        {id: 'local-14', url: '/photo_14.jpg', name: 'Photo 14'},
+        {id: 'local-15', url: '/photo_15.jpg', name: 'Photo 15'},
+        {id: 'local-16', url: '/photo_16.jpg', name: 'Photo 16'},
+        {id: 'local-17', url: '/photo_17.jpg', name: 'Photo 17'},
+        {id: 'local-18', url: '/photo_18.jpg', name: 'Photo 18'},
+        {id: 'local-19', url: '/photo_19.jpg', name: 'Photo 19'},
     ];
 
     // Определяем массив изображений для отображения на основе приоритета
@@ -39,7 +47,8 @@ export default function PhotoCollection({ data = [], loading, error, title, extr
             : data.length > 0
                 ? data.map(image => ({
                     id: image.id,
-                    url: `${import.meta.env.VITE_UPLOAD_URL}${image.url}`,
+                    // url: `${import.meta.env.VITE_UPLOAD_URL}${image.url}`,
+                    url: `${image.url}`,
                     name: image.name || `Image ${image.id}`
                 }))
                 : defaultImages;
@@ -51,7 +60,7 @@ export default function PhotoCollection({ data = [], loading, error, title, extr
             </h1>
 
             {/* Состояние загрузки */}
-            {loading && <Preloader />}
+            {loading && <Preloader/>}
 
             {/* Обработка ошибки */}
             {error && (

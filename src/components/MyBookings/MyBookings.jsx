@@ -102,9 +102,14 @@ const MyBookings = () => {
                                              className="bg-white border border-gray-200 rounded-lg shadow flex flex-col overflow-hidden h-full">
                                             <NavLink to={`/massage/${type?.documentId}`} onClick={handleClick}>
                                                 <div className="relative group">
+                                                    {/*<img*/}
+                                                    {/*    className="rounded-t-lg transform transition-transform duration-300 group-hover:scale-110"*/}
+                                                    {/*    src={import.meta.env.VITE_UPLOAD_URL + type.bgImg?.url}*/}
+                                                    {/*    alt={type.title}*/}
+                                                    {/*/>*/}
                                                     <img
                                                         className="rounded-t-lg transform transition-transform duration-300 group-hover:scale-110"
-                                                        src={import.meta.env.VITE_UPLOAD_URL + type.bgImg?.url}
+                                                        src={type.bgImg?.url}
                                                         alt={type.title}
                                                     />
                                                 </div>

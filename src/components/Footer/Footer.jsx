@@ -65,7 +65,7 @@ const Footer = () => {
                         <li>
                             <a
                                 className='hover:text-[var(--white)] transition'
-                                href="https://www.facebook.com/friends/?profile_id=100059235169418&notif_id=1706252818008423&notif_t=friend_confirmed&ref=notif"
+                                href="https://www.facebook.com/profile.php?id=100059235169418"
                                 target="_blank"
                                 rel="noreferrer"
                             >
