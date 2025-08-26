@@ -206,6 +206,12 @@ const Footer = () => {
                        className='hover:text-[var(--white)] transition'
                     > {t("footer.ivan_bezniak")}</a>
                 </p>
+                <p className='text-[var(--footer-links)] text-sm'>
+                    <NavLink to={`tel:+375295210417`}
+                             className='group-hover:text-[var(--active)] transition'>
+                        +375 29 521 04 17
+                    </NavLink>
+                </p>
             </div>
 
         </div>

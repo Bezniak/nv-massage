@@ -1,0 +1,21 @@
+User-agent: *
+
+Disallow: /*?yclid=
+
+
+Allow: /
+Allow: /register
+Allow: /login
+Allow: /aboutUs
+Allow: /reviews
+Allow: /faq
+Allow: /membership
+Allow: /contacts
+Allow: /massages
+Allow: /massage/
+Allow: /book
+Allow: /privacyPolicy
+Allow: /myBookings
+
+# Указываем правильный URL карты сайта
+Sitemap: https://nv-massage.by/sitemap.xml

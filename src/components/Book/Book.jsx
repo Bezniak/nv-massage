@@ -118,6 +118,8 @@ const Book = () => {
             await axios.post(`${import.meta.env.VITE_API_URL}/bookings`, bookingData);
             await sendToTelegram(formData);
 
+            gtagSendEvent();
+
             setMessage({
                 type: 'success',
                 text: `${name}, ${t("book.thank_you_for_reservation")} ${selectedMassages.map(m => m.title).join(', ')}. ${t("book.waiting_for_you")} ${new Date(date).toLocaleDateString('ru-RU')} ${t("book.on_time")} ${timeValue} ${t("book.at_the_address")} \n${t("book.amount_to_be_paid")} ${totalPrice} BYN.`,
